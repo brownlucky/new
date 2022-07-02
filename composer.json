@@ -1,0 +1,19 @@
+{
+    "name": "brown/composer-zf-test",
+    "authors": [
+        {
+            "name": "brown",
+            "email": "brownlucky386@mail.com"
+        }
+    ],
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/brownlucky/new.git"
+		}
+	],
+    "require": {
+		"brown/iniparser":"dev-master"
+    },
+	"minimum-stability": "dev"
+}
