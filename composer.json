@@ -1,18 +1,33 @@
 {
-    "name": "mollie/ideal-php",
-    "description": "Mollie iDEAL module for PHP",
-    "abandoned": "mollie/mollie-api-php",
-	"license": "BSD-2-Clause",
-	"homepage": "https://www.mollie.com/",
-    "autoload": {
-        "classmap": ["Mollie/"]
+    "name": "nadar/php-composer-reader",
+    "description": "Read and manipulate composer.json",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Basil Suter",
+            "email": "git@nadar.io"
+        }
+    ],
+    "require": {
+        "composer/semver": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nadar\\PhpComposerReader\\": "src/"
         }
     },
-	"support": {
-		"email": "info@mollie.com"
-	}
+    "autoload-dev": {
+        "psr-4": {
+            "Nadar\\PhpComposerReader\\Tests\\": "tests/"
+        }
+    },
+    "config": {	
+        "platform": {	
+            "php": "7.1"	
+        }	
+    }
 }
